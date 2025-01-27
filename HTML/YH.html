@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WANTED Poster</title>
+    <link rel="stylesheet" href="C:\Users\Jorda\OneDrive\Desktop\YH MEDIA\CSS\styles.css">
+</head>
+<body>
+    <div class="homepage">
+        <div class="poster-frame">
+            <h1 class="title">WANTED</h1>
+            <div class="image-box">
+                <img src="c:\Users\Jorda\Downloads\WhatsApp Image 2025-01-20 at 10.32.11_f0274fbd.jpg" alt="Wanted Person">
+            </div>
+            <p class="subtitle">For being too miserable😶‍🌫️</p>
+            <p class="bounty">Reward: $1,000,000</p>
+        </div>
+    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Button with Video Popup</title>
+        <style>
+            /* General Page Styling */
+            body {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: center;
+                height: 100vh;
+                background-color: #f4f4f4;
+            }
+    
+            /* Button Styling */
+            .glow-button {
+                background-color: #ff4d4d; /* Shade of red */
+                color: white;
+                padding: 15px 30px;
+                font-size: 18px;
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+                box-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+                transition: box-shadow 0.3s ease, transform 0.2s ease;
+                margin-bottom: 20px;
+            }
+    
+            .glow-button:hover {
+                box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+            }
+    
+            .glow-button:active {
+                transform: scale(0.95);
+            }
+    
+            /* Video Popup Styling */
+            .video-popup {
+                display: none;
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: white;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+                border-radius: 10px;
+                overflow: hidden;
+                z-index: 1000;
+                width: 80%;
+                height: 60%;
+            }
+    
+            .video-popup iframe {
+                width: 100%;
+                height: 100%;
+                border: none;
+            }
+    
+            .video-popup-overlay {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.5);
+                z-index: 999;
+            }
+        </style>
+    </head>
+    <body>
+    
+    <!-- Button -->
+    <button class="glow-button" onclick="openVideoPopup()">Find Her</button>
+    
+    <!-- Video Popup -->
+    <div class="video-popup-overlay" id="popupOverlay" onclick="closeVideoPopup()"></div>
+    <div class="video-popup" id="videoPopup">
+        <iframe src="C:\Users\Jorda\Downloads\WhatsApp Video 2025-01-23 at 12.09.22_c629b7ce.mp4"allowfullscreen></iframe>
+    </div>
+    
+    <script>
+        // Open the video popup
+        function openVideoPopup() {
+            document.getElementById('popupOverlay').style.display = 'block';
+            document.getElementById('videoPopup').style.display = 'block';
+        }
+    
+        // Close the video popup
+        function closeVideoPopup() {
+            document.getElementById('popupOverlay').style.display = 'none';
+            document.getElementById('videoPopup').style.display = 'none';
+        }
+    </script>
+    <script src="C:\Users\Jorda\OneDrive\Desktop\YH MEDIA\JAVA\YH.js"></script>
+</body>
+
+</html>
